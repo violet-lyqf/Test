@@ -18,6 +18,8 @@ public class Test {
         //Spring就是一个大工厂（容器）专门生成bean bean就是对象
         Person person = (Person) applicationContext.getBean("Person");
         //输出获取到的对象
+        person.setAge(10);
+        person.setName("张三");
         System.out.println("person = " + person);
     }
 }
